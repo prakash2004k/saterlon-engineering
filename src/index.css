@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Navbar Styling */
+.navbar {
+  padding: 1rem 1rem 1rem 0; /* Padding removed from left side to place logo at the edge */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar-brand {
+  margin-right: auto; /* Keeps logo aligned to the far left */
+}
+
+.navbar-logo {
+  height: 70px; /* Adjusts logo size */
+  width: auto;
+  margin-left: 0; /* Ensures logo starts from the left corner */
+}
+
+/* Navbar links styling */
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+/* Carousel Image Styling */
+.carousel-inner img {
+  width: 100%;
+  max-height: 500px; /* Medium size for carousel images */
+  object-fit: cover;
+}
+.founder-section {
+  background-color: #f8f9fa; /* Light background for contrast */
+  padding: 30px 0; /* Added padding for a more spacious look */
+}
+
+.founder-section h2 {
+  font-size: 2.5rem; /* Larger font size for the section title */
+  margin-bottom: 20px; /* Spacing below the title */
+}
+
+.founder-section h3 {
+  font-size: 1.75rem; /* Font size for the founder's name */
+  margin-bottom: 15px; /* Spacing below the name */
+  color: #007bff; /* Color for emphasis */
+}
+
+.founder-section p {
+  font-size: 1rem; /* Standard font size for paragraphs */
+  line-height: 1.6; /* Improved line height for readability */
+  color: #333; /* Darker text for better contrast */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+  .navbar-logo {
+    height: 50px;
+  }
+}
+.contact-footer{
+  padding: 2rem 0;
+  background: #000;
+}
+.contact-footer h3{
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+}
+.social-links a{
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  transition: all 0.4s ease;
+}
+.social-links a:hover{
+  color: #f7327a;
+  border-color: #f7327a;
 }
