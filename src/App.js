@@ -1,21 +1,25 @@
 import React from 'react';
-import './styles.css'; // Add this line at the top of App.js
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Carousel from './components/Carousel';
 import CompanyInfo from './components/CompanyInfo';
 import ContactFooter from './components/ContactFooter';
 import Footer from './components/Footer';
+import './index.css';
 
-const App = () => {
-    return (
+const App = () => (
+  <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={
         <div>
-            <Navbar />
-            <Carousel />
-            <CompanyInfo />
-            <ContactFooter />
-            <Footer />
+          <CompanyInfo />
+          <ContactFooter />
         </div>
-    );
-};
+      } />
+      {/* If you want an About page in the future, you can add the route back */}
+    </Routes>
+    <Footer />
+  </Router>
+);
 
 export default App;
